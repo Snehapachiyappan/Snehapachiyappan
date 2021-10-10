@@ -1,0 +1,50 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<head>
+		<title> Student Validation</title>
+		<script>
+			function val()
+			{
+			var srn=document.getElementById("srn_check").value;
+			if(srn.search(/^[A-Z a-z]+[0-9]+[0-9]+[A-Z a-z]+[A-Z a-z]+[0-9]+[0-9]+[0-9]+$/) == -1 || srn.length != 8)
+			{
+			alert("OOps : Invalid SRN........!");
+			
+			}
+			else
+			{
+			alert("suceess");
+			return; 
+			}
+			}
+		</script>
+	
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">RU_CSE_7th_SEM_E_SECTION Members</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:SharedWithUsers msdt:dt="string">41;#RU_CSE_7th_SEM_E_SECTION Members</mso:SharedWithUsers>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<style>
+body{ 
+  background-image: url('https://media.istockphoto.com/photos/painted-hand-shows-concept-hologram-validation-on-his-hand-picture-id965674540?k=20&m=965674540&s=612x612&w=0&h=kESXA_MhDTGvpD40MKuhy9jtSCvSfwViAHrEMYVjlew=');
+background-size:90%; }
+h1{
+
+  color:red;
+  }
+</style>
+
+
+
+<center>
+	<body>
+		<h1>Please enter the SRN for validation</h1>
+		<form>
+		<label><mark>SRN:</mark></label>
+		<input type="text" id="srn_check"/><br/><br/>
+		<input type="submit" value="click to validate" onclick="val();" />
+		</form>
+		</center>
+	</body>
+</html>
