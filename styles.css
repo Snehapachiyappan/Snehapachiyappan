@@ -1,0 +1,106 @@
+h1 {
+    color:cornsilk;
+}
+body {
+    background: linear-gradient(45deg,rgb(211, 166, 211),rgb(99, 133, 165),rgb(181, 94, 216));
+    background-image: 100%;
+    background-size: 100%;
+    
+}
+#header {
+    background-color: black;
+    height: 70px;
+
+}
+* {
+    margin: 0%;
+    text-align: center;
+}
+#brand {
+    width: 40%;
+    float: left;
+    line-height: 70px;
+    height: 70px;
+    text-align: center;
+
+}
+#menu {
+    width: 60%;
+    float: right;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+
+}
+a {
+    color:cornsilk;
+    margin: 30px;
+    text-decoration: none;
+}
+
+#title{
+    margin-top: 35px;
+    text-align: center;
+}
+#pizza{
+    text-align: center;
+    font-color:yellow;
+    margin-top: 20px;
+}
+#pizza:hover{
+    background-color:lightcoral;
+}
+#burger:hover{
+    background-color:lightblue;
+}
+table {
+    width: 100%;
+    margin-top: 30px;
+}
+img {
+    border-radius: 10px;
+    box-shadow: 0 0 black;
+}
+#Dp {
+    width: 500px;
+    background: linear-gradient(45deg,rgb(245, 241, 241),black);
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 20px auto
+    
+    
+}
+#TB {
+    width: 500px;
+    background: linear-gradient(45deg,rgb(245, 239, 239),black);
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 20px auto
+   
+    
+
+}
+#D{
+    width: 250px;
+    background: linear-gradient(45deg,rgb(197, 183, 183),rgb(15, 13, 13));
+    color: white;
+    padding: 15px;
+    border-radius: 25%;
+    margin: 20px auto
+
+}
+#drinks:hover{
+    background-color:lightseagreen;
+}
+#footer {
+    padding: 50px;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+}
+#T{
+    font-size: 30px;
+    color: darkblue;
+}
