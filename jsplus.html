@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>General Questions</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap');
+
+
+        h2 {
+            
+            text-align: center;
+            color: rgb(241, 8, 8);
+            padding: 15px;
+            font-size: 32px;
+
+        }
+
+        #main {
+            width: 900px;
+            height: 46vh;
+            box-shadow: 0 0 10px black;
+            margin: 110px auto;
+            background-color: rgb(238, 235, 230);
+            border-radius: 15px;
+        }
+
+        #main:hover {
+            background-color: lightblue;
+        }
+
+        #div1 {
+            display: block;
+            background-color: white;
+            height: 30px;
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            margin: 50px auto;
+            border-radius: 15px;
+
+        }
+
+        #div2 {
+            display: block;
+            background-color: white;
+            height: 30px;
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            margin: 50px auto;
+            border-radius: 15px;
+
+        }
+
+        #div3 {
+            display: block;
+            background-color: white;
+            height: 30px;
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            margin: 50px auto;
+            border-radius: 15px;
+
+
+        }
+
+        #div1:hover {
+            background-color: greenyellow;
+        }
+
+        #div2:hover {
+            background-color: greenyellow;
+        }
+
+        #div3:hover {
+            background-color: greenyellow;
+        }
+
+        #s1:hover {
+            color: red;
+        }
+
+        #s2:hover {
+            color: red;
+        }
+
+        #s3:hover {
+            color: red;
+        }
+
+        #S1 {
+            margin-right: 130px;
+            margin-left: 30px;
+            font-size: 15px;
+
+        }
+
+        #S2 {
+            margin-right: 176px;
+            margin-left: 30px;
+            font-size: 15px;
+
+        }
+
+        #S3 {
+            margin-right: 161px;
+            margin-left: 30px;
+            font-size: 15px;
+
+        }
+
+        #i1,
+        #i2,
+        #i3 {
+            font-size: 25px;
+        }
+
+        body {
+            background-color: rgb(255, 0, 221);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" style="padding-bottom: 15%;">
+        <h2>General Questions (Click '+' for Yes and  '-' for No)</h2>
+
+        <div id="div1"><span id="S1">Do You Accept All Major Credit Cards?</span><span onclick="fun1()" id="s1"
+                class="material-icons">add_box</span><span id="i1"></span></div>
+
+
+        <div id="div2"><Span id=S2>Do You Support Local Farmers?</Span><span onclick="fun2()" id="s2"
+                class="material-icons">add_box</span><span id="i2"></span></div>
+        <div id="div3" style="margin-bottom: 50px;"><Span id=S3>Do You Use Oraganic Ingredients?</Span><span
+                onclick="fun3()" id="s3" class="material-icons">add_box</span><span id="i3"></span></div>
+    </div>
+    <script>
+    
+        function fun1() {
+            if (document.getElementById('s1').innerText == "add_box") {
+                i1.style.color = "green";
+                i1.innerText = "YES";
+                document.getElementById('s1').innerText = 'do_not_disturb_on_total_silence'
+            } else {
+                i1.style.color = "red";
+                i1.innerText = "NO";
+                document.getElementById('s1').innerText = "add_box";
+            }
+
+        }
+
+        function fun2() {
+            if (document.getElementById('s2').innerText == "add_box") {
+                i2.style.color = "green";
+                i2.innerText = "YES";
+                document.getElementById('s2').innerText = "do_not_disturb_on_total_silence";
+            } else {
+                i2.style.color = "red";
+                i2.innerText = "NO";
+                document.getElementById('s2').innerText = "add_box";
+            }
+
+
+        }
+        function fun3() {
+
+
+            if (document.getElementById('s3').innerText == "add_box") {
+                i3.style.color = "green";
+                i3.innerText = "YES";
+                document.getElementById('s3').innerText = "do_not_disturb_on_total_silence";
+            } else {
+                i3.style.color = "red";
+                i3.innerText = "NO";
+                document.getElementById('s3').innerText = "add_box";
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
